@@ -18,9 +18,10 @@ FLUXNET_DATA <- "~/Data/FLUXNET2015/"
 
 cat("Welcome to", SCRIPTNAME, "\n")
 
-# Extract the *_SUBSET_YY_* files (for GPP) and *_SUBSET_HH_* (for 
-# nighttime Reco) from the FLUXNET zip files and save
-# Downloaded 30 Jan 2017 from http://fluxnet.fluxdata.org (ftp.fluxdata.org/.fluxnet_downloads_86523/)
+# Extract the *_SUBSET_YY_* files (for GPP) from the FLUXNET zip files and save
+# FLUXNET Tier 1 data downloaded 30 Jan 2017 from
+# http://fluxnet.fluxdata.org (ftp.fluxdata.org/.fluxnet_downloads_86523/)
+# (No update since then.)
 td <- tempdir()
 files <- list.files(FLUXNET_DATA, pattern = "zip$", full.names = TRUE)
 stopifnot(length(files) > 0)
