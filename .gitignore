@@ -1,0 +1,13 @@
+
+# OS
+.DS_Store
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Processed FLUXNET data
+# Data are freely available at http://fluxnet.fluxdata.org
+fluxnet/*.csv
